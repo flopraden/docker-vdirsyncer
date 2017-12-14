@@ -1,0 +1,8 @@
+version: "2.3"
+
+services:
+  vdirsyncer:
+    build: .
+    volumes:
+    - ./config:/root/.vdirsyncer
+    - ./data:/data
