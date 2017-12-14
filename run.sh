@@ -1,5 +1,5 @@
 #!/bin/sh
 
-yes y | vdirsyncer discover
-yes y | vdirsyncer metasync
-yes y | vdirsyncer sync
+yes y | vdirsyncer -c /config/config discover
+yes y | vdirsyncer -c /config/config metasync
+yes y | vdirsyncer -c /config/config sync
