@@ -1,10 +1,18 @@
-# docker-vvdirsyncer
+# docker-vdirsyncer
 
 A docker for [vdirsyncer](https://github.com/pimutils/vdirsyncer)
 
 # Usage
 
+## use an existing build
+
 ```
-docker build -t jbruggem/vvdirsyncer:latest .
-docker run --rm -i --user=$UID -v$PWD/config:/config -v$PWD/data:/data  jbruggem/vvdirsyncer:1.0_vdirsync_0.16.3
+docker run --rm -i --user=$UID -v$PWD/config:/config -v$PWD/data:/data  jbruggem/vdirsyncer:1.0_vdirsync_0.16.3
+```
+
+## or build it yourself
+
+```
+docker build -t jbruggem/vdirsyncer:local .
+docker run --rm -i --user=$UID -v$PWD/config:/config -v$PWD/data:/data jbruggem/vdirsyncer:local
 ```
