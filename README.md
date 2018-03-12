@@ -1,6 +1,9 @@
-# docker-vdirsyncer
+# docker-vdirsyncer 
 
 A docker for [vdirsyncer](https://github.com/pimutils/vdirsyncer)
+
+![Docker Build Status](https://img.shields.io/docker/build/jbruggem/vdirsyncer.svg)
+
 
 # Usage
 
