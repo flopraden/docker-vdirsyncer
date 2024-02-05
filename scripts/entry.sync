@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Run Sync : no metasync because it rename calendar
+vdirsyncer -c /config/Sync.conf sync

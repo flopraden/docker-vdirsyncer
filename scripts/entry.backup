@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Run Sync
+vdirsyncer -c /config/Sync.conf sync
+
+# Run Backup
+yes y | vdirsyncer -c /config/Backup.conf discover
+yes y | vdirsyncer -c /config/Backup.conf metasync
+yes y | vdirsyncer -c /config/Backup.conf sync

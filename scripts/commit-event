@@ -1,0 +1,10 @@
+#!/bin/bash
+
+Dir=$(dirname "$1")
+Action=${2:-"changed"}
+D=$(echo -ne "${Dir}" |sed -re "s|/data/Backup/||g")
+File=$(basename "$1" |sed -re 's/\.(ics|vcf)$//g')
+cd "${Dir}"
+git add . 
+git commit -a -m "* [${D}] + Event ${File} ${Action}"
+
